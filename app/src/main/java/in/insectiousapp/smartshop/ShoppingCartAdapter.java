@@ -19,6 +19,8 @@ public class ShoppingCartAdapter extends ArrayAdapter<Item> {
     LayoutInflater l;
     List<Item> objects;
 
+    TextView tvItemName, tvItemPrice, tvItemQuantity;
+
 //    public ShoppingCartAdapter(Context context, int resource, List<ClipData.Item> objects) {
 //        super(context, resource, objects);
 //    }
@@ -42,8 +44,9 @@ public class ShoppingCartAdapter extends ArrayAdapter<Item> {
             v = l.inflate(R.layout.item_shoppingcartlayout, null);
         }
 
-        final TextView t1, t2;
-
+        tvItemName=(TextView)v.findViewById(R.id.tv_shoppingcartitem_itemname);
+        tvItemPrice=(TextView)v.findViewById(R.id.tv_shoppingcartitem_itemprice);
+        tvItemQuantity=(TextView)v.findViewById(R.id.tv_shoppingcartitem_itemquantitiy);
 
        // t1 = (TextView) v.findViewById(R.id.tv1);
         //t2 = (TextView) v.findViewById(R.id.tv2);
@@ -52,6 +55,10 @@ public class ShoppingCartAdapter extends ArrayAdapter<Item> {
 
        // final Student s=objects.get(position);
 
+        Item item=objects.get(position);
+        tvItemName.setText(item.getItemName());
+        tvItemPrice.setText(String.valueOf(item.getItemPrice()));
+        tvItemQuantity.setText(String.valueOf(item.getItemQuantity()));
 
         return v;
 

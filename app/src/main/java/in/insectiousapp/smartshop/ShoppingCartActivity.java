@@ -14,6 +14,7 @@ import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -108,6 +109,21 @@ public class ShoppingCartActivity extends AppCompatActivity {
         lvShoppingCart = (ListView) findViewById(R.id.list_view_shoppingcart);
         data = new ArrayList<Item>();
 
+        Item item1=new Item(1, "Nirma", 78, 45.4f);
+
+        data.add(item1);
+        data.add(item1);
+        data.add(item1);
+        data.add(item1);
+        data.add(item1);
+        data.add(item1);
+        data.add(item1);
+        data.add(item1);
+        data.add(item1);
+
+        LayoutInflater l = getLayoutInflater();
+        adapter = new ShoppingCartAdapter(this, 0, data, l);
+        lvShoppingCart.setAdapter(adapter);
     }
 
     private boolean isBlueEnable() {

@@ -7,15 +7,19 @@ public class Item {
 
     int itemId;
     String itemName;
-    int itemQuantity;
+    int itemQty;
     float itemPrice;
 
-    public Item(int itemId, String itemName, int itemQuantity, float itemPrice)
+    public Item(int itemId, String itemName, int itemQty, float itemPrice)
     {
         this.itemId=itemId;
         this.itemName=itemName;
-        this.itemQuantity=itemQuantity;
+        this.itemQty=itemQty;
         this.itemPrice=itemPrice;
+    }
+
+    public int getItemQuantity() {
+        return itemQty;
     }
 
     public float getItemPrice() {
@@ -24,10 +28,6 @@ public class Item {
 
     public int getItemId() {
         return itemId;
-    }
-
-    public int getItemQuantity() {
-        return itemQuantity;
     }
 
     public String getItemName() {
@@ -46,10 +46,7 @@ public class Item {
         this.itemPrice = itemPrice;
     }
 
-    public void setItemQuantity(int itemQuantity) {
-        this.itemQuantity = itemQuantity;
+    public void setItemQty(int itemQty) {
+        this.itemQty = itemQty;
     }
-
-
-
 }
