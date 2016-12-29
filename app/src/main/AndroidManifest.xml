@@ -10,18 +10,24 @@
     <application
         android:name=".MyApp"
         android:allowBackup="true"
-        android:icon="@mipmap/app_icon"
+        android:icon="@mipmap/cart"
         android:label="Smart Shop"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".ShoppingCartActivity">
+        </activity>
+        <activity android:name=".BillActivity"></activity>
+        <activity android:name=".ShoppingListActivity">
+
+        </activity>
+        <activity android:name=".SplashActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".BillActivity"></activity>
     </application>
 
 </manifest>

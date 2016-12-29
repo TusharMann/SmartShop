@@ -9,21 +9,21 @@ public class Item implements Serializable{
 
     int itemId;
     String itemName;
-    int itemQty;
+    int itemQuantity;
     float itemPrice;
     int itemCheck;
 
-    public Item(int itemId, String itemName, int itemQty, float itemPrice, int itemCheck)
+    public Item(int itemId, String itemName, int itemQuantity, float itemPrice, int itemCheck)
     {
         this.itemId=itemId;
         this.itemName=itemName;
-        this.itemQty=itemQty;
+        this.itemQuantity=itemQuantity;
         this.itemPrice=itemPrice;
         this.itemCheck=itemCheck;
     }
 
     public int getItemQuantity() {
-        return itemQty;
+        return itemQuantity;
     }
 
     public float getItemPrice() {
@@ -55,7 +55,7 @@ public class Item implements Serializable{
     }
 
     public void setItemQty(int itemQty) {
-        this.itemQty = itemQty;
+        this.itemQuantity = itemQty;
     }
 
     public void setItemCheck(int itemCheck) {

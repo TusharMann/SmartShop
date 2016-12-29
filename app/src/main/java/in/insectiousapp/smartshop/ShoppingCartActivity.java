@@ -15,8 +15,6 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -73,13 +71,14 @@ public class ShoppingCartActivity extends AppCompatActivity implements View.OnCl
         setContentView(R.layout.activity_shoppingcart);
         //setHasOptionsMenu(true);
 
+        setTitle("Cart :");
         regionMap=new HashMap<>();
-        regionMap.put("iOS Room", 3);
-        regionMap.put("Ruby Room", 6);
-        regionMap.put("Python Room", 9);
-        regionMap.put("Git Room", 12);
-        regionMap.put("Test Room", 15);
-        regionMap.put("Office", 18);
+        regionMap.put("Python Room", 3);
+        regionMap.put("Git Room", 6);
+        regionMap.put("Office", 9);
+        regionMap.put("iOS Room", 12);
+        regionMap.put("Ruby Room", 15);
+        regionMap.put("Test Room", 18);
         regionMap.put("Git Room", 21);
 
         if (!havePermissions()) {
@@ -121,28 +120,33 @@ public class ShoppingCartActivity extends AppCompatActivity implements View.OnCl
 
         //started
 
+
+
         bGenerateBill=(Button)findViewById(R.id.btn_generateBill);
         bGenerateBill.setOnClickListener(this);
         lvShoppingCart = (ListView) findViewById(R.id.list_view_shoppingcart);
-        data = new ArrayList<Item>();
+        //data = new ArrayList<Item>();
 
-        Item item1=new Item(1, "Nirma", 78, 45.4f, 0);
-        Item item2=new Item(2, "Nirma2", 68, 57.4f, 1);
-        Item item3=new Item(3, "Nirma3", 68, 57.4f, 0);
-        Item item4=new Item(4, "Nirma4", 68, 57.4f, 1);
-        Item item5=new Item(5, "Nirma5", 68, 57.4f, 0);
-        Item item6=new Item(6, "Nirma6", 68, 57.4f, 1);
-        Item item7=new Item(7, "Nirma7", 68, 57.4f, 0);
-        Item item8=new Item(8, "Nirma8", 68, 57.4f, 0);
+        Intent inn=getIntent();
+        data=(ArrayList<Item>)inn.getSerializableExtra("Selected List");
 
-        data.add(item1);
-        data.add(item2);
-        data.add(item3);
-        data.add(item4);
-        data.add(item5);
-        data.add(item6);
-        data.add(item7);
-        data.add(item8);
+//        Item item1=new Item(1, "Nirma", 78, 45.4f, 0);
+//        Item item2=new Item(2, "Nirma2", 68, 57.4f, 1);
+//        Item item3=new Item(3, "Nirma3", 68, 57.4f, 0);
+//        Item item4=new Item(4, "Nirma4", 68, 57.4f, 1);
+//        Item item5=new Item(5, "Nirma5", 68, 57.4f, 0);
+//        Item item6=new Item(6, "Nirma6", 68, 57.4f, 1);
+//        Item item7=new Item(7, "Nirma7", 68, 57.4f, 0);
+//        Item item8=new Item(8, "Nirma8", 68, 57.4f, 0);
+
+//        data.add(item1);
+//        data.add(item2);
+//        data.add(item3);
+//        data.add(item4);
+//        data.add(item5);
+//        data.add(item6);
+//        data.add(item7);
+//        data.add(item8);
 
         LayoutInflater l = getLayoutInflater();
         adapter = new ShoppingCartAdapter(this, 0, data, l);
@@ -298,7 +302,7 @@ public class ShoppingCartActivity extends AppCompatActivity implements View.OnCl
             int highRange=regionMap.get(items.get(i));
             int lowRange=regionMap.get(items.get(i))-2;
 
-            //Log.i("regionnn", "Range of region of "+items.get(i)+" is :"+String.valueOf(highRange)+"-"+String.valueOf(lowRange));
+            Log.i("regionnn", "Range of region of "+items.get(i)+" is :"+String.valueOf(highRange)+"-"+String.valueOf(lowRange));
 
             for(int j=0; j<data.size(); j++)
             {
@@ -314,7 +318,7 @@ public class ShoppingCartActivity extends AppCompatActivity implements View.OnCl
                 {
                     if ((id <= highRange) && (id >= lowRange))
                     {
-                       // Log.i("regionnn", "value changed for :" + item.getItemName() + "]" + check + " range is :" + highRange + "-" + lowRange + " id:" + id);
+                        Log.i("regionnn", "value changed for :" + item.getItemName() + "]" + check + " range is :" + highRange + "-" + lowRange + " id:" + id);
                         item.setItemCheck(2);
                     }
                 }
@@ -327,21 +331,6 @@ public class ShoppingCartActivity extends AppCompatActivity implements View.OnCl
 
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return super.onCreateOptionsMenu(menu);
-    }
-
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
-        if(id == R.id.action_logout){
-            //logout();
-        }
-        return super.onOptionsItemSelected(item);
-    }
 
     @Override
     protected void onStop() {
