@@ -4,6 +4,7 @@ import android.Manifest;
 import android.app.ProgressDialog;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothManager;
+import android.content.ClipData;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
@@ -41,7 +42,8 @@ public class ShoppingCartActivity extends AppCompatActivity {
 
     //added code
 
-    int a;
+    ArrayList<ClipData.Item> data;
+    ShoppingCartAdapter adapter;
 
     //--added code
 
@@ -99,6 +101,8 @@ public class ShoppingCartActivity extends AppCompatActivity {
             }
         });
         listView.setAdapter(arrayAdapter);
+
+        
 
     }
 
