@@ -23,12 +23,13 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
 
 
-public class ShoppingCartActivity extends AppCompatActivity {
+public class ShoppingCartActivity extends AppCompatActivity implements View.OnClickListener {
 
     private static final int PERMISSIONS_REQUEST_CODE = 100;
     protected static final int REQUEST_CHECK_SETTINGS = 0x1;
@@ -67,7 +68,8 @@ public class ShoppingCartActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_shoppingcart);
+        //setHasOptionsMenu(true);
 
         if (!havePermissions()) {
             Log.i(TAG, "Requesting permissions needed for this app.");
@@ -108,24 +110,62 @@ public class ShoppingCartActivity extends AppCompatActivity {
 
         //started
 
+        bGenerateBill=(Button)findViewById(R.id.btn_generateBill);
+        bGenerateBill.setOnClickListener(this);
         lvShoppingCart = (ListView) findViewById(R.id.list_view_shoppingcart);
         data = new ArrayList<Item>();
 
-        Item item1=new Item(1, "Nirma", 78, 45.4f);
+        Item item1=new Item(1, "Nirma", 78, 45.4f, 0);
+        Item item2=new Item(1, "Nirma2", 68, 57.4f, 1);
+        Item item3=new Item(1, "Nirma3", 68, 57.4f, 0);
+        Item item4=new Item(1, "Nirma4", 68, 57.4f, 1);
+        Item item5=new Item(1, "Nirma5", 68, 57.4f, 0);
+        Item item6=new Item(1, "Nirma6", 68, 57.4f, 1);
+        Item item7=new Item(1, "Nirma7", 68, 57.4f, 0);
+        Item item8=new Item(1, "Nirma8", 68, 57.4f, 1);
 
         data.add(item1);
-        data.add(item1);
-        data.add(item1);
-        data.add(item1);
-        data.add(item1);
-        data.add(item1);
-        data.add(item1);
-        data.add(item1);
-        data.add(item1);
+        data.add(item2);
+        data.add(item3);
+        data.add(item4);
+        data.add(item5);
+        data.add(item6);
+        data.add(item7);
+        data.add(item8);
 
         LayoutInflater l = getLayoutInflater();
         adapter = new ShoppingCartAdapter(this, 0, data, l);
         lvShoppingCart.setAdapter(adapter);
+//        lvShoppingCart.setOnItemClickListener(new AdapterView.OnItemClickListener()
+//        {
+//            @Override
+//            public void onItemClick(AdapterView<?> arg0, View arg1,int position, long arg3)
+//            {
+//                Toast.makeText(getApplicationContext(), "" + position, Toast.LENGTH_SHORT).show();
+//            }
+//        });
+
+        lvShoppingCart.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Log.i("slct", "item clicked");
+                Item item=data.get(position);
+                int check=item.getItemCheck();
+                if(check==0)
+                {
+                    check=1;
+                }
+                else
+                {
+                    check=0;
+                }
+                item.setItemCheck(check);
+                adapter.notifyDataSetChanged();
+            }
+        });
+
+
+
     }
 
     private boolean isBlueEnable() {
@@ -219,7 +259,18 @@ public class ShoppingCartActivity extends AppCompatActivity {
             arrayAdapter.clear();
             arrayAdapter.addAll(items);
             arrayAdapter.notifyDataSetChanged();
+            listOfCurrentRegion(items);
         }
+    }
+
+    private void listOfCurrentRegion(List<String> items)
+    {
+
+        for(int i=0; i<items.size(); i++)
+        {
+            Log.i("regionnn", "Region is :"+items);
+        }
+
     }
 
     @Override
@@ -244,4 +295,27 @@ public class ShoppingCartActivity extends AppCompatActivity {
         MyApp.getInstance().onListRefreshListener = null;
         MyApp.getInstance().context = null;
     }
+
+    @Override
+    public void onClick(View v) {
+
+        Toast.makeText(this, "clicked", Toast.LENGTH_LONG).show();
+        ArrayList<Item> pickedItem=new ArrayList<Item>();
+        for(int i=0; i<data.size(); i++)
+        {
+            Item item= data.get(i);
+            Log.i("slct", "item :"+i+":"+String.valueOf(item.getItemCheck()));
+            if(item.getItemCheck()==1)
+            {
+                pickedItem.add(item);
+            }
+        }
+
+        Intent i=new Intent();
+        i.setClass(ShoppingCartActivity.this, BillActivity.class);
+        i.putExtra("billed_item_list", pickedItem);
+        startActivity(i);
+
+    }
+
 }

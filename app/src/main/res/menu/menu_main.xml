@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+<menu
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:title="Logout"
-        android:visible="true"
-
-        android:id="@+id/action_logout" />
+    <item android:title="Bill"
+        android:icon="@mipmap/bill_icon"
+        android:id="@+id/action_logout"
+        android:showAsAction="always"
+        android:orderInCategory="11"
+        />
 </menu>

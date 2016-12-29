@@ -1,21 +1,25 @@
 package in.insectiousapp.smartshop;
 
+import java.io.Serializable;
+
 /**
  * Created by Codev on 12/29/2016.
  */
-public class Item {
+public class Item implements Serializable{
 
     int itemId;
     String itemName;
     int itemQty;
     float itemPrice;
+    int itemCheck;
 
-    public Item(int itemId, String itemName, int itemQty, float itemPrice)
+    public Item(int itemId, String itemName, int itemQty, float itemPrice, int itemCheck)
     {
         this.itemId=itemId;
         this.itemName=itemName;
         this.itemQty=itemQty;
         this.itemPrice=itemPrice;
+        this.itemCheck=itemCheck;
     }
 
     public int getItemQuantity() {
@@ -28,6 +32,10 @@ public class Item {
 
     public int getItemId() {
         return itemId;
+    }
+
+    public int getItemCheck() {
+        return itemCheck;
     }
 
     public String getItemName() {
@@ -48,5 +56,9 @@ public class Item {
 
     public void setItemQty(int itemQty) {
         this.itemQty = itemQty;
+    }
+
+    public void setItemCheck(int itemCheck) {
+        this.itemCheck = itemCheck;
     }
 }
