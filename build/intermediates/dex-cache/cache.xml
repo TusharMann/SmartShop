@@ -2,46 +2,11 @@
 <items version="2" >
 
     <item
-        jar="D:\Beacathon\update1\SmartShop\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\jars\classes.jar"
+        jar="D:\Beacathon\Beacathon-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\10.0.1\jars\classes.jar"
         jumboMode="false"
         revision="23.0.3"
-        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
-        <dex dex="D:\Beacathon\update1\SmartShop\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.0.1_46ae6921e9086257b5412570387b56d1c8503fc9.jar" />
-    </item>
-    <item
-        jar="D:\Beacathon\update1\SmartShop\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\libs\internal_impl-24.0.0.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
-        <dex dex="D:\Beacathon\update1\SmartShop\app\build\intermediates\pre-dexed\debug\internal_impl-24.0.0_015642fff34fa40e3c1af96ab49c433a791fae50.jar" />
-    </item>
-    <item
-        jar="D:\Beacathon\SmartShop\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\10.0.1\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="25438f55fc6d906a0e72f30b21487541430ede43">
-        <dex dex="D:\Beacathon\SmartShop\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-10.0.1_b3868696500e69bac97f1f7c354108149a3d28e2.jar" />
-    </item>
-    <item
-        jar="D:\Beacathon\update1\SmartShop\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.0.1\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="4356e230a981d1bbf047d848b91bc0d9b7c5bacc">
-        <dex dex="D:\Beacathon\update1\SmartShop\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-23.0.1_901938e704328b50efdc2ef566c525e9c70b86d5.jar" />
-    </item>
-    <item
-        jar="D:\Beacathon\Beacathon-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth-base\10.0.1\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="e96c6974cf924e7ee3b230e6847d5731423388c9">
-        <dex dex="D:\Beacathon\Beacathon-master\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-auth-base-10.0.1_177940b9528da40bf3b51e30bb7f385f648d294d.jar" />
-    </item>
-    <item
-        jar="D:\Beacathon\SmartShop\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
-        <dex dex="D:\Beacathon\SmartShop\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-24.0.0_f89439f54a5dc0cab0e1bbe3d67f35f74e0086c5.jar" />
+        sha1="756f6297eef79784f5e356dcd4f39865028b2bd0">
+        <dex dex="D:\Beacathon\Beacathon-master\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-10.0.1_b4c4de6fd5a357ff8f7efe85732a523cba0a4d53.jar" />
     </item>
     <item
         jar="D:\Beacathon\Beacathon-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\10.0.1\jars\classes.jar"
@@ -51,25 +16,32 @@
         <dex dex="D:\Beacathon\Beacathon-master\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-tasks-10.0.1_0cde5a6a7bd61fd8011bcab9a5ec02e5a4f3fa5c.jar" />
     </item>
     <item
-        jar="D:\Beacathon\Beacathon-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\10.0.1\jars\classes.jar"
+        jar="D:\Beacathon\update1\SmartShop\app\build\intermediates\exploded-aar\com.android.support\design\23.0.1\jars\classes.jar"
         jumboMode="false"
         revision="23.0.3"
-        sha1="25438f55fc6d906a0e72f30b21487541430ede43">
-        <dex dex="D:\Beacathon\Beacathon-master\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-10.0.1_a98f2774f091808c0dde41091789272cdc9bd921.jar" />
+        sha1="e5c61a3169221a89654ffcaaed47bba51cf071ad">
+        <dex dex="D:\Beacathon\update1\SmartShop\app\build\intermediates\pre-dexed\debug\com.android.support-design-23.0.1_c60f1866dd33b10b238f50ddc7099a65710492c2.jar" />
     </item>
     <item
-        jar="D:\Beacathon\update1\SmartShop\app\build\intermediates\exploded-aar\org.altbeacon\android-beacon-library\2.9.2\jars\classes.jar"
+        jar="D:\Beacathon\Beacathon-master\app\build\intermediates\exploded-aar\com.android.support\design\23.0.1\jars\classes.jar"
         jumboMode="false"
         revision="23.0.3"
-        sha1="b1c4132dd2d386a819199b7e738c4d6e60897670">
-        <dex dex="D:\Beacathon\update1\SmartShop\app\build\intermediates\pre-dexed\debug\org.altbeacon-android-beacon-library-2.9.2_15a415743c43931ce9e8330314ec37659c51ec60.jar" />
+        sha1="e5c61a3169221a89654ffcaaed47bba51cf071ad">
+        <dex dex="D:\Beacathon\Beacathon-master\app\build\intermediates\pre-dexed\debug\com.android.support-design-23.0.1_7a3dcb31d42fdbeec398f2a88ed0ef88fbfd7fcc.jar" />
     </item>
     <item
-        jar="D:\Beacathon\SmartShop\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\10.0.1\jars\classes.jar"
+        jar="D:\Beacathon\update1\SmartShop\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\jars\classes.jar"
         jumboMode="false"
         revision="23.0.3"
-        sha1="6addaba208e21c6da776d0ca75b6b23a6ccd5499">
-        <dex dex="D:\Beacathon\SmartShop\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-tasks-10.0.1_a5f49558bff21b28f78551eaecbd899b8ca86f2c.jar" />
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="D:\Beacathon\update1\SmartShop\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.0.1_46ae6921e9086257b5412570387b56d1c8503fc9.jar" />
+    </item>
+    <item
+        jar="D:\Beacathon\update1\SmartShop\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="4356e230a981d1bbf047d848b91bc0d9b7c5bacc">
+        <dex dex="D:\Beacathon\update1\SmartShop\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-23.0.1_901938e704328b50efdc2ef566c525e9c70b86d5.jar" />
     </item>
     <item
         jar="D:\Beacathon\update1\SmartShop\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth-base\10.0.1\jars\classes.jar"
@@ -79,11 +51,11 @@
         <dex dex="D:\Beacathon\update1\SmartShop\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-auth-base-10.0.1_abd7d19f613545d7df3a60ab63882e009ca92827.jar" />
     </item>
     <item
-        jar="D:\Beacathon\Beacathon-master\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.0.1\jars\classes.jar"
+        jar="C:\Users\Codev\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.6.0\98476622f10715998eacf9240d6b479f12c66143\okio-1.6.0.jar"
         jumboMode="false"
         revision="23.0.3"
-        sha1="4356e230a981d1bbf047d848b91bc0d9b7c5bacc">
-        <dex dex="D:\Beacathon\Beacathon-master\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-23.0.1_380007ff733355de82b251a5e32fc54cf8120cda.jar" />
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="D:\Beacathon\Beacathon-master\app\build\intermediates\pre-dexed\debug\okio-1.6.0_bc7bd8bbdd7a76a24c9565c3610eea50a889a15d.jar" />
     </item>
     <item
         jar="D:\Beacathon\update1\SmartShop\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\10.0.1\jars\classes.jar"
@@ -93,25 +65,25 @@
         <dex dex="D:\Beacathon\update1\SmartShop\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-10.0.1_fdc6c165b092a86c73f8a62c5215bd2a98ccd88e.jar" />
     </item>
     <item
-        jar="C:\Users\Codev\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.6.0\98476622f10715998eacf9240d6b479f12c66143\okio-1.6.0.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="98476622f10715998eacf9240d6b479f12c66143">
-        <dex dex="D:\Beacathon\Beacathon-master\app\build\intermediates\pre-dexed\debug\okio-1.6.0_bc7bd8bbdd7a76a24c9565c3610eea50a889a15d.jar" />
-    </item>
-    <item
-        jar="D:\Beacathon\Beacathon-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\10.0.1\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="e2185aff89caeb337b1ffc36d5e525d8318e7cfe">
-        <dex dex="D:\Beacathon\Beacathon-master\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-auth-10.0.1_ea0434995cbdaca411ee96c0ebe0a161ea7205f5.jar" />
-    </item>
-    <item
         jar="D:\Beacathon\update1\SmartShop\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\10.0.1\jars\classes.jar"
         jumboMode="false"
         revision="23.0.3"
         sha1="756f6297eef79784f5e356dcd4f39865028b2bd0">
         <dex dex="D:\Beacathon\update1\SmartShop\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-10.0.1_1ecbcafa3fcd34fcb8b4295ca0bd9124d2ec424c.jar" />
+    </item>
+    <item
+        jar="C:\Users\Codev\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.6.1\b9d63507329a7178e026fc334f87587ee5070ac5\gson-2.6.1.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="b9d63507329a7178e026fc334f87587ee5070ac5">
+        <dex dex="D:\Beacathon\Beacathon-master\app\build\intermediates\pre-dexed\debug\gson-2.6.1_e93dbbb2bdbdec791334d7130c5ac5bef1ec7779.jar" />
+    </item>
+    <item
+        jar="D:\Beacathon\SmartShop\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\libs\internal_impl-24.0.0.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
+        <dex dex="D:\Beacathon\SmartShop\app\build\intermediates\pre-dexed\debug\internal_impl-24.0.0_36ecb626c900905a1905b30936e2919cf84a75c8.jar" />
     </item>
     <item
         jar="C:\Users\Codev\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.2.0\f7873a2ebde246a45c2a8d6f3247108b4c88a879\okhttp-3.2.0.jar"
@@ -121,11 +93,39 @@
         <dex dex="D:\Beacathon\Beacathon-master\app\build\intermediates\pre-dexed\debug\okhttp-3.2.0_912fb31eb9f031813a4623d65314c3bd1125acfc.jar" />
     </item>
     <item
-        jar="D:\Beacathon\SmartShop\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\libs\internal_impl-24.0.0.jar"
+        jar="D:\Beacathon\Beacathon-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="e2185aff89caeb337b1ffc36d5e525d8318e7cfe">
+        <dex dex="D:\Beacathon\Beacathon-master\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-auth-10.0.1_ea0434995cbdaca411ee96c0ebe0a161ea7205f5.jar" />
+    </item>
+    <item
+        jar="D:\Beacathon\SmartShop\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="6addaba208e21c6da776d0ca75b6b23a6ccd5499">
+        <dex dex="D:\Beacathon\SmartShop\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-tasks-10.0.1_a5f49558bff21b28f78551eaecbd899b8ca86f2c.jar" />
+    </item>
+    <item
+        jar="D:\Beacathon\update1\SmartShop\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\libs\internal_impl-24.0.0.jar"
         jumboMode="false"
         revision="23.0.3"
         sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
-        <dex dex="D:\Beacathon\SmartShop\app\build\intermediates\pre-dexed\debug\internal_impl-24.0.0_36ecb626c900905a1905b30936e2919cf84a75c8.jar" />
+        <dex dex="D:\Beacathon\update1\SmartShop\app\build\intermediates\pre-dexed\debug\internal_impl-24.0.0_015642fff34fa40e3c1af96ab49c433a791fae50.jar" />
+    </item>
+    <item
+        jar="D:\Beacathon\Beacathon-master\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="D:\Beacathon\Beacathon-master\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.0.1_8b6f671375efe11de8edbac3efabcf860735857a.jar" />
+    </item>
+    <item
+        jar="D:\Beacathon\SmartShop\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="756f6297eef79784f5e356dcd4f39865028b2bd0">
+        <dex dex="D:\Beacathon\SmartShop\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-10.0.1_9cc376926a3b9126708f0939f27ab089644ddf52.jar" />
     </item>
     <item
         jar="D:\Beacathon\SmartShop\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\10.0.1\jars\classes.jar"
@@ -142,81 +142,11 @@
         <dex dex="D:\Beacathon\Beacathon-master\app\build\intermediates\pre-dexed\debug\support-annotations-24.0.0_415942341558d5101448aa203b104c40a2112284.jar" />
     </item>
     <item
-        jar="D:\Beacathon\update1\SmartShop\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\10.0.1\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="6addaba208e21c6da776d0ca75b6b23a6ccd5499">
-        <dex dex="D:\Beacathon\update1\SmartShop\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-tasks-10.0.1_29b357b16adf7c0305de1dc62ea7746e75880880.jar" />
-    </item>
-    <item
-        jar="D:\Beacathon\update1\SmartShop\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.4.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="d9ecde39b460470e655de6e47c05573d2d5a8bfb">
-        <dex dex="D:\Beacathon\update1\SmartShop\app\build\intermediates\pre-dexed\debug\com.android.support-cardview-v7-23.4.0_e73ce5d5c79e841e1ae9ea984cb5aa93b167b926.jar" />
-    </item>
-    <item
-        jar="D:\Beacathon\Beacathon-master\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\libs\internal_impl-24.0.0.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
-        <dex dex="D:\Beacathon\Beacathon-master\app\build\intermediates\pre-dexed\debug\internal_impl-24.0.0_3691f0afa221f45557383f468b49ca9ec917b605.jar" />
-    </item>
-    <item
-        jar="D:\Beacathon\SmartShop\app\build\intermediates\exploded-aar\org.altbeacon\android-beacon-library\2.9.2\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="b1c4132dd2d386a819199b7e738c4d6e60897670">
-        <dex dex="D:\Beacathon\SmartShop\app\build\intermediates\pre-dexed\debug\org.altbeacon-android-beacon-library-2.9.2_8ff694759ae5f4ee3348f9873c9d2a2069f5127a.jar" />
-    </item>
-    <item
-        jar="C:\Users\Codev\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\retrofit\2.0.0\5c06d197fb7fa875ad452f562e3310dd9949d066\retrofit-2.0.0.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="5c06d197fb7fa875ad452f562e3310dd9949d066">
-        <dex dex="D:\Beacathon\Beacathon-master\app\build\intermediates\pre-dexed\debug\retrofit-2.0.0_908a9de0aa0cef24774e7e814557a3294dedc75e.jar" />
-    </item>
-    <item
-        jar="D:\Beacathon\Beacathon-master\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
-        <dex dex="D:\Beacathon\Beacathon-master\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.0.1_8b6f671375efe11de8edbac3efabcf860735857a.jar" />
-    </item>
-    <item
-        jar="D:\Beacathon\update1\SmartShop\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
-        <dex dex="D:\Beacathon\update1\SmartShop\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-24.0.0_9367543f3bf57e8182fcb218655395ab6415e886.jar" />
-    </item>
-    <item
         jar="C:\Users\Codev\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\converter-gson\2.0.0\49eb3ad545e7701234e4dd83db8dc1344b577f23\converter-gson-2.0.0.jar"
         jumboMode="false"
         revision="23.0.3"
         sha1="49eb3ad545e7701234e4dd83db8dc1344b577f23">
         <dex dex="D:\Beacathon\Beacathon-master\app\build\intermediates\pre-dexed\debug\converter-gson-2.0.0_d8d47cb12ef437c4515e1b03466cd8813d97974f.jar" />
-    </item>
-    <item
-        jar="C:\Users\Codev\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.6.1\b9d63507329a7178e026fc334f87587ee5070ac5\gson-2.6.1.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="b9d63507329a7178e026fc334f87587ee5070ac5">
-        <dex dex="D:\Beacathon\Beacathon-master\app\build\intermediates\pre-dexed\debug\gson-2.6.1_e93dbbb2bdbdec791334d7130c5ac5bef1ec7779.jar" />
-    </item>
-    <item
-        jar="D:\Beacathon\SmartShop\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\10.0.1\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="756f6297eef79784f5e356dcd4f39865028b2bd0">
-        <dex dex="D:\Beacathon\SmartShop\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-10.0.1_9cc376926a3b9126708f0939f27ab089644ddf52.jar" />
-    </item>
-    <item
-        jar="C:\Users\Codev\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
-        <dex dex="D:\Beacathon\Beacathon-master\app\build\intermediates\pre-dexed\debug\picasso-2.5.2_c1707d0f0f3dae67909c8109b84c0cbca17b318c.jar" />
     </item>
     <item
         jar="D:\Beacathon\SmartShop\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth-base\10.0.1\jars\classes.jar"
@@ -226,18 +156,46 @@
         <dex dex="D:\Beacathon\SmartShop\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-auth-base-10.0.1_3b2f35b865c080cd793c7f05df7996cc9763b728.jar" />
     </item>
     <item
-        jar="D:\Beacathon\Beacathon-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\10.0.1\jars\classes.jar"
+        jar="D:\Beacathon\SmartShop\app\build\intermediates\exploded-aar\org.altbeacon\android-beacon-library\2.9.2\jars\classes.jar"
         jumboMode="false"
         revision="23.0.3"
-        sha1="756f6297eef79784f5e356dcd4f39865028b2bd0">
-        <dex dex="D:\Beacathon\Beacathon-master\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-10.0.1_b4c4de6fd5a357ff8f7efe85732a523cba0a4d53.jar" />
+        sha1="b1c4132dd2d386a819199b7e738c4d6e60897670">
+        <dex dex="D:\Beacathon\SmartShop\app\build\intermediates\pre-dexed\debug\org.altbeacon-android-beacon-library-2.9.2_8ff694759ae5f4ee3348f9873c9d2a2069f5127a.jar" />
     </item>
     <item
-        jar="D:\Beacathon\Beacathon-master\app\build\intermediates\exploded-aar\com.android.support\design\23.0.1\jars\classes.jar"
+        jar="D:\Beacathon\Beacathon-master\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\libs\internal_impl-24.0.0.jar"
         jumboMode="false"
         revision="23.0.3"
-        sha1="e5c61a3169221a89654ffcaaed47bba51cf071ad">
-        <dex dex="D:\Beacathon\Beacathon-master\app\build\intermediates\pre-dexed\debug\com.android.support-design-23.0.1_7a3dcb31d42fdbeec398f2a88ed0ef88fbfd7fcc.jar" />
+        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
+        <dex dex="D:\Beacathon\Beacathon-master\app\build\intermediates\pre-dexed\debug\internal_impl-24.0.0_3691f0afa221f45557383f468b49ca9ec917b605.jar" />
+    </item>
+    <item
+        jar="D:\Beacathon\update1\SmartShop\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="6addaba208e21c6da776d0ca75b6b23a6ccd5499">
+        <dex dex="D:\Beacathon\update1\SmartShop\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-tasks-10.0.1_29b357b16adf7c0305de1dc62ea7746e75880880.jar" />
+    </item>
+    <item
+        jar="C:\Users\Codev\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="D:\Beacathon\Beacathon-master\app\build\intermediates\pre-dexed\debug\picasso-2.5.2_c1707d0f0f3dae67909c8109b84c0cbca17b318c.jar" />
+    </item>
+    <item
+        jar="D:\Beacathon\Beacathon-master\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="4356e230a981d1bbf047d848b91bc0d9b7c5bacc">
+        <dex dex="D:\Beacathon\Beacathon-master\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-23.0.1_380007ff733355de82b251a5e32fc54cf8120cda.jar" />
+    </item>
+    <item
+        jar="D:\Beacathon\SmartShop\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
+        <dex dex="D:\Beacathon\SmartShop\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-24.0.0_f89439f54a5dc0cab0e1bbe3d67f35f74e0086c5.jar" />
     </item>
     <item
         jar="D:\Beacathon\Beacathon-master\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\classes.jar"
@@ -247,6 +205,20 @@
         <dex dex="D:\Beacathon\Beacathon-master\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-24.0.0_30f3add7036efae6bbf860b27893fdbc29d5416c.jar" />
     </item>
     <item
+        jar="D:\Beacathon\Beacathon-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth-base\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="e96c6974cf924e7ee3b230e6847d5731423388c9">
+        <dex dex="D:\Beacathon\Beacathon-master\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-auth-base-10.0.1_177940b9528da40bf3b51e30bb7f385f648d294d.jar" />
+    </item>
+    <item
+        jar="D:\Beacathon\Beacathon-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="25438f55fc6d906a0e72f30b21487541430ede43">
+        <dex dex="D:\Beacathon\Beacathon-master\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-10.0.1_a98f2774f091808c0dde41091789272cdc9bd921.jar" />
+    </item>
+    <item
         jar="D:\Beacathon\update1\SmartShop\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\10.0.1\jars\classes.jar"
         jumboMode="false"
         revision="23.0.3"
@@ -254,11 +226,11 @@
         <dex dex="D:\Beacathon\update1\SmartShop\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-auth-10.0.1_8e6e49ccdac86b081b2d2f7bbfc0ea0614528174.jar" />
     </item>
     <item
-        jar="D:\Beacathon\update1\SmartShop\app\build\intermediates\exploded-aar\com.android.support\design\23.0.1\jars\classes.jar"
+        jar="D:\Beacathon\update1\SmartShop\app\build\intermediates\exploded-aar\org.altbeacon\android-beacon-library\2.9.2\jars\classes.jar"
         jumboMode="false"
         revision="23.0.3"
-        sha1="e5c61a3169221a89654ffcaaed47bba51cf071ad">
-        <dex dex="D:\Beacathon\update1\SmartShop\app\build\intermediates\pre-dexed\debug\com.android.support-design-23.0.1_c60f1866dd33b10b238f50ddc7099a65710492c2.jar" />
+        sha1="b1c4132dd2d386a819199b7e738c4d6e60897670">
+        <dex dex="D:\Beacathon\update1\SmartShop\app\build\intermediates\pre-dexed\debug\org.altbeacon-android-beacon-library-2.9.2_15a415743c43931ce9e8330314ec37659c51ec60.jar" />
     </item>
     <item
         jar="D:\Beacathon\Beacathon-master\app\build\intermediates\exploded-aar\org.altbeacon\android-beacon-library\2.9.2\jars\classes.jar"
@@ -266,6 +238,34 @@
         revision="23.0.3"
         sha1="b1c4132dd2d386a819199b7e738c4d6e60897670">
         <dex dex="D:\Beacathon\Beacathon-master\app\build\intermediates\pre-dexed\debug\org.altbeacon-android-beacon-library-2.9.2_7b37d3259e1d20752b503e7cde645bdb720e658a.jar" />
+    </item>
+    <item
+        jar="D:\Beacathon\update1\SmartShop\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="d9ecde39b460470e655de6e47c05573d2d5a8bfb">
+        <dex dex="D:\Beacathon\update1\SmartShop\app\build\intermediates\pre-dexed\debug\com.android.support-cardview-v7-23.4.0_e73ce5d5c79e841e1ae9ea984cb5aa93b167b926.jar" />
+    </item>
+    <item
+        jar="D:\Beacathon\update1\SmartShop\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
+        <dex dex="D:\Beacathon\update1\SmartShop\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-24.0.0_9367543f3bf57e8182fcb218655395ab6415e886.jar" />
+    </item>
+    <item
+        jar="C:\Users\Codev\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\retrofit\2.0.0\5c06d197fb7fa875ad452f562e3310dd9949d066\retrofit-2.0.0.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="5c06d197fb7fa875ad452f562e3310dd9949d066">
+        <dex dex="D:\Beacathon\Beacathon-master\app\build\intermediates\pre-dexed\debug\retrofit-2.0.0_908a9de0aa0cef24774e7e814557a3294dedc75e.jar" />
+    </item>
+    <item
+        jar="D:\Beacathon\SmartShop\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="25438f55fc6d906a0e72f30b21487541430ede43">
+        <dex dex="D:\Beacathon\SmartShop\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-10.0.1_b3868696500e69bac97f1f7c354108149a3d28e2.jar" />
     </item>
 
 </items>

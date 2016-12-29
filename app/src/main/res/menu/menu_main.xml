@@ -3,5 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item android:title="Logout"
+        android:visible="true"
+
         android:id="@+id/action_logout" />
 </menu>
