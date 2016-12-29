@@ -26,6 +26,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 
@@ -41,6 +42,7 @@ public class ShoppingCartActivity extends AppCompatActivity implements View.OnCl
     private static String[] mPermissions = { Manifest.permission.ACCESS_FINE_LOCATION};
     private MyApp.OnListRefreshListener onListRefreshListener;
 
+    public HashMap<String, Integer> regionMap;
 
     //added code
 
@@ -70,6 +72,15 @@ public class ShoppingCartActivity extends AppCompatActivity implements View.OnCl
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shoppingcart);
         //setHasOptionsMenu(true);
+
+        regionMap=new HashMap<>();
+        regionMap.put("iOS Room", 3);
+        regionMap.put("Ruby Room", 6);
+        regionMap.put("Python Room", 9);
+        regionMap.put("Git Room", 12);
+        regionMap.put("Test Room", 15);
+        regionMap.put("Office", 18);
+        regionMap.put("Git Room", 21);
 
         if (!havePermissions()) {
             Log.i(TAG, "Requesting permissions needed for this app.");
@@ -116,13 +127,13 @@ public class ShoppingCartActivity extends AppCompatActivity implements View.OnCl
         data = new ArrayList<Item>();
 
         Item item1=new Item(1, "Nirma", 78, 45.4f, 0);
-        Item item2=new Item(1, "Nirma2", 68, 57.4f, 1);
-        Item item3=new Item(1, "Nirma3", 68, 57.4f, 0);
-        Item item4=new Item(1, "Nirma4", 68, 57.4f, 1);
-        Item item5=new Item(1, "Nirma5", 68, 57.4f, 0);
-        Item item6=new Item(1, "Nirma6", 68, 57.4f, 1);
-        Item item7=new Item(1, "Nirma7", 68, 57.4f, 0);
-        Item item8=new Item(1, "Nirma8", 68, 57.4f, 1);
+        Item item2=new Item(2, "Nirma2", 68, 57.4f, 1);
+        Item item3=new Item(3, "Nirma3", 68, 57.4f, 0);
+        Item item4=new Item(4, "Nirma4", 68, 57.4f, 1);
+        Item item5=new Item(5, "Nirma5", 68, 57.4f, 0);
+        Item item6=new Item(6, "Nirma6", 68, 57.4f, 1);
+        Item item7=new Item(7, "Nirma7", 68, 57.4f, 0);
+        Item item8=new Item(8, "Nirma8", 68, 57.4f, 0);
 
         data.add(item1);
         data.add(item2);
@@ -266,9 +277,52 @@ public class ShoppingCartActivity extends AppCompatActivity implements View.OnCl
     private void listOfCurrentRegion(List<String> items)
     {
 
+        for(int i=0; i<data.size(); i++)
+        {
+              Item item=data.get(i);
+                int check=item.getItemCheck();
+            if(check==2)
+            {
+                item.setItemCheck(0);
+            }
+        }
+        adapter.notifyDataSetChanged();
+
         for(int i=0; i<items.size(); i++)
         {
-            Log.i("regionnn", "Region is :"+items);
+            //Log.i("regionnn", "Region is :"+items.get(i));
+
+
+        //now we will search in the list
+
+            int highRange=regionMap.get(items.get(i));
+            int lowRange=regionMap.get(items.get(i))-2;
+
+            //Log.i("regionnn", "Range of region of "+items.get(i)+" is :"+String.valueOf(highRange)+"-"+String.valueOf(lowRange));
+
+            for(int j=0; j<data.size(); j++)
+            {
+                Item item=data.get(j);
+                int check=item.getItemCheck();
+                int id=item.getItemId();
+
+                if ( check==1 )
+                {
+
+                }
+                else
+                {
+                    if ((id <= highRange) && (id >= lowRange))
+                    {
+                       // Log.i("regionnn", "value changed for :" + item.getItemName() + "]" + check + " range is :" + highRange + "-" + lowRange + " id:" + id);
+                        item.setItemCheck(2);
+                    }
+                }
+
+
+            }
+            adapter.notifyDataSetChanged();
+
         }
 
     }
@@ -309,6 +363,13 @@ public class ShoppingCartActivity extends AppCompatActivity implements View.OnCl
             {
                 pickedItem.add(item);
             }
+        }
+
+
+        for(int j=0; j<pickedItem.size(); j++)
+        {
+            Item item=pickedItem.get(j);
+            item.setItemCheck(0);
         }
 
         Intent i=new Intent();

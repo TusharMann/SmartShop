@@ -1,12 +1,10 @@
 package in.insectiousapp.smartshop;
 
 import android.content.Context;
-import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.CheckBox;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -15,15 +13,14 @@ import java.util.List;
 /**
  * Created by Codev on 12/29/2016.
  */
-public class ShoppingCartAdapter extends ArrayAdapter<Item> {
+public class BillAdapter extends ArrayAdapter<Item> {
 
 
     Context context;
     LayoutInflater l;
     List<Item> objects;
 
-    TextView tvItemName, tvItemPrice, tvItemQuantity;
-    CheckBox cbItemSelected;
+    TextView tvItemName, tvItemPrice, tvItemQuantity, tvCost;
     int check=0;
     LinearLayout lvBack;
 
@@ -32,7 +29,7 @@ public class ShoppingCartAdapter extends ArrayAdapter<Item> {
 //    }
 
 
-    public ShoppingCartAdapter(Context context, int resource, List<Item> objects, LayoutInflater l) {
+    public BillAdapter(Context context, int resource, List<Item> objects, LayoutInflater l) {
         super(context, resource, objects);
 
         this.context=context;
@@ -47,13 +44,13 @@ public class ShoppingCartAdapter extends ArrayAdapter<Item> {
         View v = convertView;
 
         if (v == null) {
-            v = l.inflate(R.layout.item_shoppingcartlayout, null);
+            v = l.inflate(R.layout.item_shoppingcartlayout2, null);
         }
 
         tvItemName=(TextView)v.findViewById(R.id.tv_shoppingcartitem_itemname);
         tvItemPrice=(TextView)v.findViewById(R.id.tv_shoppingcartitem_itemprice);
         tvItemQuantity=(TextView)v.findViewById(R.id.tv_shoppingcartitem_itemquantitiy);
-        cbItemSelected=(CheckBox)v.findViewById(R.id.cb_shoppingcartitem_billeditemcheck);
+        tvCost=(TextView)v.findViewById(R.id.tv_shoppingcartitem_itemcost);
         lvBack=(LinearLayout)v.findViewById(R.id.lv_back);
 
        // t1 = (TextView) v.findViewById(R.id.tv1);
@@ -68,24 +65,11 @@ public class ShoppingCartAdapter extends ArrayAdapter<Item> {
         tvItemPrice.setText(String.valueOf(item.getItemPrice()));
         tvItemQuantity.setText(String.valueOf(item.getItemQuantity()));
 
-        check=item.getItemCheck();
-        if(check==1)
-        {
-            cbItemSelected.setChecked(true);
-        }
-        else
-        {
-            cbItemSelected.setChecked(false);
-        }
+        float price=item.getItemPrice();
+        int quantity=item.getItemQuantity();
 
-        if(check==2)
-        {
-            lvBack.setBackgroundColor(Color.parseColor("#8BC34A"));
-        }
-        else
-        {
-            lvBack.setBackgroundColor(Color.parseColor("#ffffff"));
-        }
+        float amount=price*quantity;
+        tvCost.setText(String.valueOf(amount));
 
         return v;
 

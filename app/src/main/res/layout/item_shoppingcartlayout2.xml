@@ -42,14 +42,15 @@
             android:id="@+id/tv_shoppingcartitem_itemname"
             />
 
-        <CheckBox
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#fff"
-            android:id="@+id/cb_shoppingcartitem_billeditemcheck"
-            android:focusable="false"
-            android:focusableInTouchMode="false"
-            android:clickable="false"
+            android:layout_weight="3"
+            android:text="Cost"
+            android:textColor="#fff"
+            android:fontFamily="sans-serif"
+            android:textSize="18sp"
+            android:id="@+id/tv_shoppingcartitem_itemcost"
             />
 
     </LinearLayout>

@@ -32,7 +32,6 @@
         android:id="@+id/list_view_shoppingcart"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:visibility="gone"
         android:layout_weight="4"/>
 
     <TextView
@@ -48,7 +47,7 @@
         android:textSize="18sp"
         android:layout_gravity="center"
         android:gravity="center"
-        android:background="@color/colorAccent"
+        android:background="@color/colorPrimary"
         android:textColor="#fff"
         android:id="@+id/btn_generateBill"
         android:fontFamily="sans-serif-light"
