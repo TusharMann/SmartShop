@@ -1,6 +1,5 @@
 package in.insectiousapp.smartshop;
 
-import android.content.ClipData;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,14 +12,19 @@ import java.util.List;
 /**
  * Created by Codev on 12/29/2016.
  */
-public class ShoppingCartAdapter extends ArrayAdapter<ClipData.Item> {
+public class ShoppingCartAdapter extends ArrayAdapter<Item> {
 
 
     Context context;
     LayoutInflater l;
-    List<ClipData.Item> objects;
+    List<Item> objects;
 
-    public ShoppingCartAdapter(Context context, int resource, List<ClipData.Item> objects, LayoutInflater l) {
+//    public ShoppingCartAdapter(Context context, int resource, List<ClipData.Item> objects) {
+//        super(context, resource, objects);
+//    }
+
+
+    public ShoppingCartAdapter(Context context, int resource, List<Item> objects, LayoutInflater l) {
         super(context, resource, objects);
 
         this.context=context;
