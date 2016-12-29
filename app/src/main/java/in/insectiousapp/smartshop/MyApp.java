@@ -35,7 +35,7 @@ public class MyApp extends Application implements BeaconConsumer {
     public CopyOnWriteArrayList<Region> regionList;
     public HashMap<String,Region> ssnRegionMap;
     public OnListRefreshListener onListRefreshListener;
-    public MainActivity context;
+    public ShoppingCartActivity context;
 
     public interface OnListRefreshListener {
         void onListRefresh();

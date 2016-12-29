@@ -26,22 +26,24 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-
-public class MainActivity extends AppCompatActivity {
+public class ShoppingCartActivity extends AppCompatActivity {
 
     private static final int PERMISSIONS_REQUEST_CODE = 100;
     protected static final int REQUEST_CHECK_SETTINGS = 0x1;
-    private static final String TAG = MainActivity.class.getSimpleName();
-
-
+    private static final String TAG = ShoppingCartActivity.class.getSimpleName();
     private ArrayAdapter<String> arrayAdapter;
-
     private LinearLayout mContainer;
-
     private ProgressDialog progressDialog;
 
     private static String[] mPermissions = { Manifest.permission.ACCESS_FINE_LOCATION};
     private MyApp.OnListRefreshListener onListRefreshListener;
+
+
+    //added code
+
+
+
+    //--added code
 
     @Override
     protected void onResume() {
@@ -88,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
                 if (!MyApp.getInstance().regionList.isEmpty()) {
                     try {
 //                        String beaconSSN = MyApp.getInstance().regionList.get(i).getId2().toHexString();
-//                        Intent regionIntent = new Intent(MainActivity.this,RegionDetailActivity.class);
+//                        Intent regionIntent = new Intent(ShoppingCartActivity.this,RegionDetailActivity.class);
 //                        regionIntent.putExtra("beacon_ssn",beaconSSN);
 //                        regionIntent.putExtra("name", MyApp.getInstance().regionNameList.get(i));
 //                        startActivity(regionIntent);
@@ -107,8 +109,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-
-
     private boolean havePermissions() {
         for(String permission:mPermissions){
             if(ActivityCompat.checkSelfPermission(this,permission)!= PackageManager.PERMISSION_GRANTED){
@@ -123,10 +123,7 @@ public class MainActivity extends AppCompatActivity {
                 mPermissions, PERMISSIONS_REQUEST_CODE);
     }
 
-    /**
-     * Displays {@link Snackbar} instructing user to visit Settings to grant permissions required by
-     * this application.
-     */
+
     private void showLinkToSettingsSnackbar() {
         if (mContainer == null) {
             return;
@@ -149,9 +146,7 @@ public class MainActivity extends AppCompatActivity {
                 }).show();
     }
 
-    /**
-     * Displays {@link Snackbar} with button for the user to re-initiate the permission workflow.
-     */
+
     private void showRequestPermissionsSnackbar() {
         if (mContainer == null) {
             return;
@@ -162,16 +157,12 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
                         // Request permission.
-                        ActivityCompat.requestPermissions(MainActivity.this,
+                        ActivityCompat.requestPermissions(ShoppingCartActivity.this,
                                 mPermissions,
                                 PERMISSIONS_REQUEST_CODE);
                     }
                 }).show();
     }
-
-
-
-
 
 
     @Override
@@ -211,71 +202,6 @@ public class MainActivity extends AppCompatActivity {
         return super.onCreateOptionsMenu(menu);
     }
 
-
-//    private void enterRegion(final String beaconSSN){
-//        NetworkDataManager<ApiResponse> manager = new NetworkDataManager<>();
-//        NetworkDataManager.NetworkResponseListener listener = manager.new NetworkResponseListener() {
-//            @Override
-//            public void onSuccessResponse(ApiResponse response) {
-//                Log.i("TAG","Enter Update Success for beacon: " + beaconSSN);
-//            }
-//
-//            @Override
-//            public void onFailure(int code, String message) {
-//                Log.i("TAG","Enter Update Fail for beacon: " + beaconSSN);
-//            }
-//        };
-//        Call<ApiResponse> call= ApiClient.authorizedApiService().addUserInRegion(beaconSSN);
-//        manager.execute(call,listener);
-//    }
-//
-//    private void exitRegion(final String beaconSSN){
-//        NetworkDataManager<ApiResponse> manager = new NetworkDataManager<>();
-//        NetworkDataManager.NetworkResponseListener listener = manager.new NetworkResponseListener() {
-//            @Override
-//            public void onSuccessResponse(ApiResponse response) {
-//                Log.i("TAG","Exit Update Success for beacon: " + beaconSSN);
-//            }
-//
-//            @Override
-//            public void onFailure(int code, String message) {
-//                Log.i("TAG","Exit Update Fail for beacon: " + beaconSSN);
-//            }
-//        };
-//        Call<ApiResponse> call = ApiClient.authorizedApiService().removeUserFromRegion(beaconSSN);
-//        manager.execute(call,listener);
-//    }
-
-
-    private void logout(){
-//        progressDialog.setMessage("Logging Out...");
-//        progressDialog.show();
-//        Call<ApiResponse> logout = ApiClient.authorizedApiService().logout();
-//        NetworkDataManager<ApiResponse> manager = new NetworkDataManager<>();
-//        NetworkDataManager.NetworkResponseListener listener = manager.new NetworkResponseListener() {
-//            @Override
-//            public void onSuccessResponse(ApiResponse response) {
-//                Log.i("TAG","logout Success");
-//                if(progressDialog!=null){
-//                    progressDialog.dismiss();
-//                }
-//                UserUtil.logout();
-//                Intent login = new Intent(MainActivity.this,Login.class);
-//                startActivity(login);
-//                finish();
-//            }
-//
-//            @Override
-//            public void onFailure(int code, String message) {
-//                if(progressDialog!=null){
-//                    progressDialog.dismiss();
-//                }
-//                Log.i("TAG","logout Fail");
-//                Snackbar.make(mContainer,"Unable to logut",Snackbar.LENGTH_SHORT).show();
-//            }
-//        };
-//        manager.execute(logout,listener);
-    }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
