@@ -98,6 +98,7 @@ public class ShoppingListActivity extends AppCompatActivity {
                 for(int i=0;i<size;i++){
                     Item item=selecteditem.get(i);
                     item.setItemCheck(0);
+                    Log.i("getid", String.valueOf(selecteditem.get(i).getItemId()));
                     item.setItemId(i+1);
                 }
 
