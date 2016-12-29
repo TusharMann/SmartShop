@@ -41,7 +41,7 @@ public class ShoppingCartActivity extends AppCompatActivity {
 
     //added code
 
-
+    int a;
 
     //--added code
 
